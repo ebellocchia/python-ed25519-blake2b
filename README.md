@@ -28,6 +28,13 @@ handle and incorporate into other protocols. All known attacks take at least
 2^128 operations, providing the same security level as AES-128, NIST P-256,
 and RSA-3072.
 
+## Installation
+
+Installation:
+
+```
+pip install ed25519-blake2b-fork
+```
 
 ## Dependencies
 
@@ -82,20 +89,10 @@ same data any number of times will result in the same signature each time.
 
 ## Compilation
 
-To build and install the library, run the normal setup.py command:
+To build and install the library, run the normal build command:
 
 ```
-python setup.py build
-sudo python setup.py install
-```
-
-You can run the (fast) test suite, the (slower) known-answer-tests, and the
-speed-benchmarks through setup.py commands too:
-
-```
-python setup.py test
-python setup.py test_kat
-python setup.py speed
+python -m build
 ```
 
 ## Prefixes and Encodings
