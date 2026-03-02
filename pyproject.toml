@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ed25519-blake2b"
+name = "ed25519-blake2b-fork"
 dynamic = ["version"]
 description = "Ed25519 public-key signatures (BLAKE2b fork)"
 readme = "README.md"
