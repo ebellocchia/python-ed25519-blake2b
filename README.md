@@ -92,6 +92,7 @@ same data any number of times will result in the same signature each time.
 To build and install the library, run the normal build command:
 
 ```
+pip install build
 python -m build
 ```
 
