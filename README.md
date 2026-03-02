@@ -1,6 +1,9 @@
 Python Bindings to the Ed25519 Digital Signature System (BLAKE2b fork)
 ======================================================================
 
+This is a fork of [python-ed25519-blake2b](https://github.com/Matoking/python-ed25519-blake2b/) to automatically build wheels for different platforms.
+
+
 [![Build Status](https://travis-ci.org/Matoking/python-ed25519-blake2b.png?branch=master)](https://travis-ci.org/Matoking/python-ed25519-blake2b)
 
 This fork of [python-ed25519](https://github.com/warner/python-ed25519)
@@ -151,7 +154,7 @@ output of either `.to_bytes()` or `.to_seed()`:
 ```python
 keydata = open("my-secret-key","rb").read()
 signing_key = ed25519_blake2b.SigningKey(keydata)
- 
+
 seed = open("my-secret-seed","rb").read()
 signing_key2 = ed25519_blake2b.SigningKey(seed)
 assert signing_key == signing_key2
@@ -211,17 +214,17 @@ The complete API is summarized here:
 ```python
 sk,vk = ed25519_blake2b.create_keypair(entropy=os.urandom)
 vk = sk.get_verifying_key()
- 
+
 signature = sk.sign(message, prefix=, encoding=)
 vk.verify(signature, message, prefix=, encoding=)
- 
+
 seed = sk.to_seed(prefix=)
 sk = SigningKey(seed, prefix=)
 bytes = sk.to_bytes(prefix=)
 sk = SigningKey(bytes, prefix=)
 ascii = sk.to_ascii(prefix=, encoding=)  # encodes seed
 sk = SigningKey(ascii, prefix=, encoding=)
- 
+
 bytes = vk.to_bytes(prefix=)
 vk = VerifyingKey(bytes, prefix=)
 ascii = vk.to_ascii(prefix=, encoding=)
