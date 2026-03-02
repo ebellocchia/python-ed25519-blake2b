@@ -3,7 +3,6 @@ Python Bindings to the Ed25519 Digital Signature System (BLAKE2b fork)
 
 This is a fork of [python-ed25519-blake2b](https://github.com/Matoking/python-ed25519-blake2b/) to automatically build wheels for different platforms.
 
-
 [![Build Status](https://travis-ci.org/Matoking/python-ed25519-blake2b.png?branch=master)](https://travis-ci.org/Matoking/python-ed25519-blake2b)
 
 This fork of [python-ed25519](https://github.com/warner/python-ed25519)
