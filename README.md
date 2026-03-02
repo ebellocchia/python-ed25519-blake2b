@@ -3,7 +3,10 @@ Python Bindings to the Ed25519 Digital Signature System (BLAKE2b fork)
 
 This is a fork of [python-ed25519-blake2b](https://github.com/Matoking/python-ed25519-blake2b/) to automatically build wheels for different platforms.
 
+[![PyPI version](https://badge.fury.io/py/ed25519-blake2b-fork.svg)](https://badge.fury.io/py/ed25519-blake2b-fork)
 [![Build wheels](https://github.com/ebellocchia/python-ed25519-blake2b/actions/workflows/build-wheels.yml/badge.svg)](https://github.com/ebellocchia/python-ed25519-blake2b/actions/workflows/build-wheels.yml)
+
+---
 
 This fork of [python-ed25519](https://github.com/warner/python-ed25519)
 uses BLAKE2b instead of SHA512 as a hash algorithm. This allows the library
